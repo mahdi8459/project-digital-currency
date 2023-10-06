@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="12dp"
+    android:paddingBottom="14dp">
+
+    <ImageView
+        android:id="@+id/img_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCoinName"
+        style="@style/CoinBitText.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTC"
+        app:layout_constraintStart_toStartOf="@+id/txtTaghir"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTaghir"
+        style="@style/CoinBitText.Body1Alternate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:text="CoinBase"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_item"
+        app:layout_constraintTop_toBottomOf="@+id/txtCoinName" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        style="@style/CoinBitText.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$3.185"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCoinName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/txtCoinName" />
+
+    <TextView
+        android:id="@+id/txtMarketCap"
+        style="@style/CoinBitText.Body1Alternate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$2.4 million"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTaghir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/txtTaghir" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="254dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
