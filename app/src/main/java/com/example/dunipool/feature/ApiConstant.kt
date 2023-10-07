@@ -3,7 +3,7 @@ package com.example.dunipool.feature
 // base url
 const val BASE_URL = "https://min-api.cryptocompare.com/data/"
 const val BASE_URL_IMAGE = "https://www.cryptocompare.com"
-const val API_KEY = "authorization: Apikey 2ddb806e66987268e5c0fb32a10fde535c7412692f5e7d3842f96b31932d179a"
+const val API_KEY = "Api key"
 const val BASE_URL_TWITTER = "https://twitter.com/"
 
 // chart data
